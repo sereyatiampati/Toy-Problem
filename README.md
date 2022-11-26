@@ -13,3 +13,7 @@
 <h2>Challenge 3: Net Salary Calculator (Toy Problem)</h2>
 <p>Write a program whose major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. Calculate the payee (i.e. Tax), NHIF Deductions, NSSF Deductions, gross salary, and net salary. </p>
 <p><strong>NB:</strong> <em>Use KRA, NHIF, and NSSF values provided in the link below</em></p>
+<ul>
+    <li><a href="https://www.aren.co.ke/payroll/taxrates.htm">Link to an external site</a></li>
+    <li><a href="https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye">KRA PAYE Calculator</a></li>
+</ul>

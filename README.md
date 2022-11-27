@@ -23,4 +23,5 @@
 
 ## Requirements and Installations
 Install node and clone this repository to your local machine. Open Visual Studio Code and run terminal on VS Code to run the each individual challenge.
+
 Copyright © 2022 [sereyatiampati](https://github.com/sereyatiampati) All rights reserved.

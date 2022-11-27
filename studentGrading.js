@@ -1,5 +1,7 @@
+const prompt = require('prompt-sync')();
+//Function for grading marks from the user input
 function grading() {
-    let marks = parseInt(prompt("Enter Student's Marks:" ))
+    let marks = parseInt(prompt("Enter Student's Marks:" )) //prompt the user for marks
     if(marks>=80){
         return 'Grade: A';
     }

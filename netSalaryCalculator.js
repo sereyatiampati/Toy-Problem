@@ -1,13 +1,13 @@
 const prompt = require('prompt-sync')();
-const salary= parseInt(prompt("Enter your Monthly Basic Salary: "))
+const salary= parseInt(prompt("Enter your Monthly Basic Salary: ")) 
 const benefits= parseInt(prompt("Enter the total of your Monthly Benefits: "))
-const personalRelief= 2400;
-const grossIncome= salary + benefits;
-const MonthlytaxDeduction = paye();
-const MonthlyNhifDeduction= nhif();
-const monthlyNssfDeduction= nssf();
-const totalDeductions= MonthlytaxDeduction + MonthlyNhifDeduction + monthlyNssfDeduction;
-const netSalary= grossIncome- totalDeductions;
+const personalRelief= 2400; // personal relief is constant for all the taxable income
+const grossIncome= salary + benefits; // computes the gross income from the input values entered by the user
+const MonthlytaxDeduction = paye(); //invokes the paye function 
+const MonthlyNhifDeduction= nhif(); //invokes the nhif function 
+const monthlyNssfDeduction= nssf(); //invokes the nssf function 
+const totalDeductions= MonthlytaxDeduction + MonthlyNhifDeduction + monthlyNssfDeduction; // computes the total deductions
+const netSalary= grossIncome- totalDeductions;// computes the net salary
 console.log('Your monthly Gross Salary is '+ grossIncome);
 console.log('Your monthly PAYE is '+ MonthlytaxDeduction);
 console.log("Monthly NHIF Deduction is " + MonthlyNhifDeduction)
@@ -15,7 +15,7 @@ console.log('Monthly NSSF Deduction is '+ monthlyNssfDeduction);
 console.log('Your Net Salary is '+ netSalary);
 
 
-
+//Function to compute the paye from the gross income
 function paye(){
 if (grossIncome> 0 && grossIncome <=24000){
     return ("PAYE is chargeable to person's of employement Income of 24,000 and above. You are exempted!");
@@ -34,7 +34,7 @@ else if (grossIncome>32333){
     return totaltax
 }
 }
-
+//Function to compute the nhif from the gross income
 function nhif(){
     let nhifDeduction;
     if (grossIncome<6000){
@@ -106,7 +106,7 @@ function nhif(){
         return nhifDeduction
     }
 }
-
+//Function to compute the nssf from the gross income
 function nssf(){
     const nssfDeduction= grossIncome*0.06;
     return nssfDeduction

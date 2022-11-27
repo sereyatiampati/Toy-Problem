@@ -1,3 +1,4 @@
+//function to compute demerit points 
 function speedDetector(){
     let speed= prompt('What was the speed(km/s) of the car?')
     

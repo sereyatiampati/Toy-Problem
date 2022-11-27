@@ -1,5 +1,5 @@
 function grading() {
-    let marks = prompt("Enter Student's Marks:" )
+    let marks = parseInt(prompt("Enter Student's Marks:" ))
     if(marks>=80){
         return 'Grade: A';
     }

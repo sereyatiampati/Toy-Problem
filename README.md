@@ -17,5 +17,6 @@
     <li><a href="https://www.aren.co.ke/payroll/taxrates.htm">Link to an external site</a></li>
     <li><a href="https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye">KRA PAYE Calculator</a></li>
 </ul>
+
 ## Author
 * **Sereya Tiampati** - [sereyatiampati](https://github.com/sereyatiampati)

@@ -20,3 +20,5 @@
 
 ## Author
 * **Sereya Tiampati** - [sereyatiampati](https://github.com/sereyatiampati)
+
+## Requirements and Installations
